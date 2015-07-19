@@ -11,10 +11,12 @@ a:-webkit-any-link {
 
 html {
   margin: 0px;
+  height: 100%;
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  min-height: 100%;
 }
 
 p {
@@ -40,6 +42,9 @@ ul li{
 h1 {
   font size: 40px;
   color: black;
+  margin-top: 0px;
+  display: inline-block;
+  margin-bottom: 0px;
 }
 
 ul {
@@ -55,14 +60,16 @@ h2 {
 
 h3 {
   text-align: center;
-  font-size: 36px;
+  font-size: 45px;
   margin-bottom: 10px;
   background-size: cover;
   color: black;
-  background-image: url("images/bg1.jpg");
-  width: 80%;
-  margin-left: 90px;
-  border-radius: 15px;
+  background-image: url("images/bg2.jpg");
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  vertical-align: middle;
+  margin-bottom: 0px;
+
 }
 
 h4 {
@@ -78,22 +85,22 @@ hr {
 }
 
 .container {
-  height: auto;
+  height: 100%;
   background-image: url("images/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 0px;
+
 }
 
 .jumbotron {
   background-image: url("images/image1.jpg");
   background-size: cover;
-  height: 400px;
+  height: auto;
   width: 100%;
   background-repeat: no-repeat;
-  left: 0px;
-  margin-left:auto;
-  margin-right:auto;
+  min-height: 600px;
+  position: relative;
 }
 
 .side_para {
@@ -105,13 +112,13 @@ hr {
 }
 
 .sub_main {
-  width: 95%;
+  width: 100%;
 }
 
 .sub__footer {
   margin: auto;
   font-size: 0;
-  width:80%;
+  width:100%;
 }
 
 .btn {
@@ -168,22 +175,36 @@ hr {
   margin: auto;
   margin-top: 20px;
   width: 80%;
+  height: 200px;
 }
 
 .wrapper1 {
   display: inline-block;
   width: 60%;
+  position: relative;
+  float: left;
+}
+
+.author {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.authortime {
+  margin-left: 5px;
+  margin-bottom: 20px;
 }
 
 .wrapper__side {
   text-align: center;
   display: inline-block;
   width: 30%;
-  position: absolute;
+  position: relative;
   padding: 33px;
   padding-right: 30px;
   margin-left: 0px;
   right: 0px;
+  height: 600px;
 }
 
 .smedia {
@@ -211,14 +232,18 @@ hr {
 
 .smedia2 {
   margin-left: 56px;
+  display: inline-block;
+  padding: 15px;
+  font-size: 15px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .quotes {
   background-image: url("images/bg1.jpg");
   border-radius: 15px;
   width: 77%;
-  padding-left: 20px;
-  margin-left: 17px;
+  margin-left: 36px;
 }
 
 #header2 {
@@ -226,6 +251,9 @@ hr {
   background-image: url("images/bg2.jpg");
   background-size: cover;
   border-radius: 15px;
+  width: 100%;
+  margin-top:  30px;
+  margin-bottom: 30px;
 }
 
 .connect2 {
@@ -233,6 +261,8 @@ hr {
   background-color: grey;
   background-image: url("images/bg2.jpg");
   border-radius: 15px;
+  position: relative;
+  float: left;
 }
 
 #logo1 {
@@ -258,6 +288,7 @@ hr {
   line-height: 100%;
   background-image: url("images/bg2.jpg");
   border-radius: 15px;
+  margin-bottom: 0px;
 }
 
 #logo2 {
@@ -265,6 +296,11 @@ hr {
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   width: 60px;
+}
+
+#stamp {
+border-radius: 150px;
+width: 20px;
 }
 
 #side_image {
@@ -294,7 +330,6 @@ hr {
 
 #villian1 {
   background-image: url("images/villian1.jpg");
-  border-radius: 25px 1px 1px 1px;
 }
 
 #villian2 {
@@ -307,5 +342,10 @@ hr {
 
 #villian4 {
   background-image: url("images/villian4.jpg");
-  border-radius: 1px 25px 1px 1px;
+}
+
+@media (max-width: 600px) {
+  .wrapper__side {
+    display: none;
+  }
 }
