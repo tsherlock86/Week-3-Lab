@@ -95,7 +95,7 @@ hr {
 }
 
 .jumbotron {
-  background-image: url("images/image1.jpg");
+  /*background-image: url("images/image1.jpg");*/
   background-size: cover;
   height: auto;
   width: 100%;
@@ -167,7 +167,7 @@ hr {
   padding: 50px;
 }
 
-.top_bar {
+.searchbar__texts li {
   color: white;
 }
 
@@ -214,7 +214,7 @@ hr {
   padding-left: 15px;
 }
 
-.connect {
+.smedia li {
   padding-top: 0px;
   padding: 4px;
   text-align: left;
@@ -259,7 +259,7 @@ hr {
   margin-bottom: 30px;
 }
 
-.connect2 {
+.smedia2 li {
   /*padding-left: 50px;*/
   background-color: grey;
   background-image: url("images/bg2.jpg");
@@ -278,6 +278,12 @@ hr {
   left: 0px;
 }
 
+.random {
+  width: 100%;
+  height: 500px;
+  background-cover:
+  background-repeat: no-repeat;
+}
 #texts {
   font-size: 20px;
   color: #E8E8E8;
